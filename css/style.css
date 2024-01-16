@@ -1,0 +1,378 @@
+
+.slider {
+    position: relative;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.rslides_tabs {
+    z-index: 999;
+    padding: 0.3em 5em;
+    margin-top: 6px;
+}
+
+.rslides_tabs li {
+    display: inline-block;
+    margin: 0 2px;
+    list-style: none;
+}
+
+.rslides_tabs li:first-child {
+    margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#slider3-pager a {
+    display: inline-block;
+}
+
+#slider3-pager img {
+    float: left;
+    display: block;
+}
+
+.rslides_tabs a {
+    border-bottom: 4px solid #ddd;
+}
+
+#slider3-pager .rslides_here a {
+    background: transparent;
+    border-bottom: 4px solid #ffb500;
+}
+
+a.rslides_nav.rslides1_nav.prev {
+    position: absolute;
+    left: 0%;
+    color:#FFFFFF;
+    top: 100%;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-weight: 0;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.rslides_nav.rslides1_nav.next {
+    right: 0%;
+    position: absolute;
+    color:#FFFFFF;
+    top: 100%;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*-- responsive-mediaqueries --*/
+
+@media (max-width:100000px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 4px;
+        width: 8%;
+    }
+    #slider3-pager img {
+        float: left;
+        display: block;
+        width:100%
+    }
+}
+
+@media (max-width:1366px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 4px;
+        width: 8%;
+    }
+}
+
+@media (max-width:1080px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 2px;
+        width: 8%;
+    }
+}
+
+@media (max-width:900px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 1px;
+        width: 8%;
+    }
+}
+
+@media (max-width:768px) {
+    .rslides_tabs a {
+        border-bottom: 2px solid #ddd;
+    }
+    #slider3-pager .rslides_here a {
+        background: transparent;
+        border-bottom: 2px solid #ffb500;
+    }
+}
+
+
+
+
+/*-- //slider-css --*/
+
+/*-- banner-bottom --*/
+
+
+
+
+
+
+/* Radial Out */
+
+.hvr-radial-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-radial-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fcb314;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+    color: white;
+}
+
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+
+.w3_agile_services_grid:hover .hvr-radial-out:before,
+.w3_agileits_services_bottom_grid:hover .hvr-radial-out:before,
+.w3layouts_mail_grid_left:hover .hvr-radial-out:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+
+
+
+/*-- //banner-bottom --*/
+
+
+/*-- //banner --*/
+
+.wthree_head_section h2 {
+    font-size: 3.3em;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1.2em;
+    font-weight: 800;
+}
+
+.about h4 {
+    font-size: 2em;
+    margin: 1em 0 0.5em 0;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.about_agileinfo h3 {
+    text-align: left;
+    margin-top: 2em;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #303030;
+}
+
+.about_agileinfo p {
+    font-size: 14px;
+    line-height: 2em;
+    margin-top: 1em;
+    color: #9da0af;
+    letter-spacing: 1px;
+}
+
+.services,
+.team,
+.contact-w3layouts,
+.agile_testimonials {
+    padding: 7em 0;
+}
+
+#welcome {
+    background: #0b0c11;
+    padding: 7em 0;
+}
+
+.wthree_head_section {
+    text-align: left;
+}
+
+.w3l_header {
+    font-size: 3em;
+    color: #262c38;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3.w3l_header.w3_agileits_header.two {
+    color: #fff;
+}
+
+.w3l_header span {
+    color: #545151;
+    font-weight: 200;
+}
+
+h3.w3l_header.w3_agileits_header.two span {
+    color: #fff;
+}
+
+.w3l_header:after {
+    border-top: 2px solid #ffb500;
+    display: block;
+    width: 81px;
+    content: "";
+    margin: 8px auto 0;
+}
+
+h3.agile_tittle i {
+    font-size: 0.8em;
+    margin-bottom: 6px;
+}
+
+h3.agile_tittle span {
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    font-size: 18px;
+}
+
+.agile_wthree_inner_grids {
+    margin-top: 4em;
+}
+
+.agileits-button.two a,
+.agileits-button a {
+    padding: 0.8em 0em;
+    color: #0b0c11;
+    font-size: 1em;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.agileits-button.two a:hover,
+.agileits-button a:hover {
+    box-shadow: none;
+}
+
+.about_agileinfo {
+    padding: 0;
+}
+
+.about_agileinfo_grid_imgs img {
+    width: 100%;
+}
+
+.about_agileinfo_grid_imgs img:nth-child(2) {
+    margin-top: 1em;
+}
+
+
+/* Underline From Left */
+
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--//responsive--*/

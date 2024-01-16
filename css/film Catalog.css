@@ -1,0 +1,575 @@
+.PathPrompt {
+    width: 100%;
+    height: 4%;
+    padding: 0px;
+    font-size: 1vw;
+    font-weight: initial;
+    margin-top: 1.1%;
+}
+.sorting{
+    width: 100%;
+    height: 8%;
+    background: lightgrey;
+    padding: 0px;
+    line-height:  410%;
+    font-size: 1.2rem;
+    font-weight: initial;
+    color: black;
+    z-index: 99999;
+}
+.timeAndPopularity{
+    margin-left: 4%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 45%;
+    align-items: center;
+    justify-items: center;
+
+}
+.sortSubCatalogItem{
+    background: white;
+    font-size: 1rem;
+    z-index: 99999;
+}
+.content{
+    width: 90%;
+    background: black;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2% 5%;
+    margin: 0;
+}
+
+.movieItem{
+    width: 325px;
+    height: 550px;
+    background: white;
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.pictureBox{
+    width: 325px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+.picture{
+    width: 325px;
+    height: 200px;
+    opacity: 100%;
+}
+.movieName{
+    align-self: center;
+    font-size: 1.5rem;
+    margin-top: 13px;
+    font-family: AppleMyungjo;
+    text-align: center;
+
+}
+.movieNameHollywood{
+    font-size: 1.3rem;
+}
+.movieIntro{
+    width: 325px;
+    height: 190px;
+    font-size: 15px;
+}
+.movieType{
+    width: 325px;
+    height: 90px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+.pictureBox .mask {
+    width: 325px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    align-self: center;
+}
+
+.pictureBox:hover .mask {
+    opacity: 0.8;
+    text-align: center;
+    align-self: center;
+}
+
+.pictureBox img {
+    transition: all 0.2s linear;
+    max-width: 100%;
+}
+.pictureBox a.info{
+    font-family: AppleGothic;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    line-height: 200px;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.pictureBox:hover img {
+    transform: scale(1.1);
+}
+.pictureBox:hover h1,
+.pictureBox:hover p,
+.pictureBox:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.pictureBox:hover a.info {
+    transition-delay: 0.2s;
+    text-align: center;
+    align-self: center;
+}
+.pageNumTable{
+    font-size: 2rem
+}
+.selectPage{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+    color:white;
+}
+.notSelectPage{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:white;
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:700px) and (max-width:1200px){ /* For mobile phones: */
+    .PathPrompt{
+        width: 100%;
+        height: 3%;
+        padding: 0px;
+        font-size: 1vw;
+        font-weight: initial;
+        margin-top: 2%;
+
+    }
+    .content {
+        width: 90%;
+        background: black;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2,1fr);
+        padding: 2% 5%;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+    }
+    .sorting{
+        width: 100%;
+        height: 8%;
+        color: black;
+        background: lightgrey;
+        padding: 0px;
+        line-height:  250%;
+        font-size: 1rem;
+        font-weight: initial;
+        z-index: 99999;
+
+    }
+    .sortSubCatalogItem{
+        background: white;
+        font-size: 0.8rem;
+        z-index: 99999;
+    }
+
+
+    .movieItem{
+        width: 325px;
+        height: 450px;
+        background: white;
+        margin: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .pictureBox{
+        width: 325px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        cursor: default;
+    }
+    .picture{
+        width: 325px;
+        height: 200px;
+        opacity: 100%;
+    }
+    .movieName{
+        align-self: center;
+        font-size: 1.5rem;
+        margin-top: 13px;
+        font-family: AppleMyungjo;
+        text-align: center;
+
+    }
+    .movieIntro{
+        width: 325px;
+        height: 130px;
+        font-size: 0.7rem;
+        margin-top: -10px;
+    }
+    .movieType{
+        width: 325px;
+        height: 30px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+
+
+
+
+}
+@media screen and (min-width:410px) and (max-width:700px) { /* For mobile phones: */
+    .PathPrompt{
+        width: 100%;
+        height: 3%;
+        padding: 0px;
+        font-size: 1vw;
+        font-weight: initial;
+        margin-top: 2%;
+
+    }
+    .content {
+        width: 90%;
+        background: black;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1,1fr);
+        padding: 2% 5%;
+        justify-items: center;
+        margin: 0;
+    }
+    .sorting{
+        width: 100%;
+        height: 8%;
+        color: black;
+        background: lightgrey;
+        padding: 0px;
+        line-height:  250%;
+        font-size: 0.9rem;
+        font-weight: initial;
+        z-index: 99999;
+    }
+    .sortSubCatalogItem{
+        background: white;
+        font-size: 0.7rem;
+        z-index: 99999;
+    }
+    .timeAndPopularity{
+        margin-left: 4%;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 50%;align-items: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .movieItem{
+        width: 274px;
+        height: 410px;
+        background: white;
+        margin: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .pictureBox{
+        width: 274px;
+        height: 170px;
+        position: relative;
+        overflow: hidden;
+        cursor: default;
+    }
+    .picture{
+        width: 274px;
+        height: 170px;
+        opacity: 100%;
+    }
+    .movieName{
+        align-self: center;
+        font-size: 1.1rem;
+        margin-top: 13px;
+        font-family: AppleMyungjo;
+        text-align: center;
+
+    }
+    .movieNameHollywood{
+        font-size: 1rem;
+    }
+    .movieIntro{
+        width: 274px;
+        height: 130px;
+        font-size: 0.6rem;
+        margin-top: -14px;
+    }
+    .movieType{
+        width: 274px;
+        height: 20px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .pageNumTable{
+        font-size: 1.5rem
+    }
+    .selectPage{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 30px;
+        color:white;
+    }
+    .notSelectPage{
+        margin-left: 15px;
+        margin-right: 15px;
+        color:white;
+        text-decoration:none;
+    }
+    .pictureBox .mask {
+        width: 274px;
+        height: 170px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        align-self: center;
+    }
+}
+@media screen and (min-width:4px) and (max-width:410px) { /* For mobile phones: */
+    .PathPrompt{
+        width: 100%;
+        height: 3%;
+        padding: 0px;
+        font-size: 1vw;
+        font-weight: initial;
+        margin-top: 4%;
+    }
+    .content {
+        width: 90%;
+        background: black;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1,1fr);
+        padding: 2% 5%;
+        justify-items: center;
+        margin: 0;
+    }
+    .sorting{
+        width: 100%;
+        height: 8%;
+        color: black;
+        background: lightgrey;
+        padding: 0px;
+        line-height:  250%;
+        font-size: 0.7rem;
+        font-weight: initial;
+        z-index: 99999;
+    }
+    .sortSubCatalogItem{
+        background: white;
+        font-size: 0.6rem;
+        z-index: 99999;
+    }
+    .timeAndPopularity{
+        margin-left: 4%;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 60%;align-items: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .movieItem{
+        width: 274px;
+        height: 410px;
+        background: white;
+        margin: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .pictureBox{
+        width: 274px;
+        height: 170px;
+        position: relative;
+        overflow: hidden;
+        cursor: default;
+    }
+    .picture{
+        width: 274px;
+        height: 170px;
+        opacity: 100%;
+    }
+    .movieName{
+        align-self: center;
+        font-size: 1.1rem;
+        margin-top: 13px;
+        font-family: AppleMyungjo;
+        text-align: center;
+
+    }
+    .movieNameHollywood{
+        font-size: 1rem;
+    }
+    .movieIntro{
+        width: 274px;
+        height: 130px;
+        font-size: 0.5rem;
+        margin-top: -15px;
+    }
+    .movieType{
+        width: 274px;
+        height: 20px;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .pageNumTable{
+        font-size: 1.5rem
+    }
+    .selectPage{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 30px;
+        color:white;
+    }
+    .notSelectPage{
+        margin-left: 15px;
+        margin-right: 15px;
+        color:white;
+        text-decoration:none;
+    }
+    .pictureBox .mask {
+        width: 274px;
+        height: 170px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-height:500px) and (max-height:800px){ /* For mobile phones: */
+    .PathPrompt{
+        width: 100%;
+        height: 7%;
+        padding: 0px;
+        font-size: 1.2rem;
+        font-weight: initial;
+        line-height: 150%;
+    }
+    .sorting {
+        width: 100%;
+        height: 70px;
+        background: lightgrey;
+        padding: 0px;
+        line-height: 310%;
+        font-size: 0.9rem;
+        font-weight: initial;
+        color: black;
+        z-index: 99999;
+    }
+
+
+
+}
+@media screen and (min-height:330px) and (max-height:500px){ /* For mobile phones: */
+    .PathPrompt{
+        width: 100%;
+        height: 8%;
+        padding: 0px;
+        font-size: 0.8rem;
+        font-weight: initial;
+        line-height: 100%;
+    }
+    .sorting{
+        width: 100%;
+        height: 70px;
+        color: black;
+        background: lightgrey;
+        padding: 0px;
+        line-height:  250%;
+        font-size: 1rem;
+        font-weight: initial;
+        z-index: 99999;
+
+
+    }
+
+}
+@media screen and (min-height:50px) and (max-height:330px){ /* For mobile phones: */
+    .PathPrompt{
+        width: 100%;
+        height: 7%;
+        padding: 0px;
+        font-size: 1rem;
+        font-weight: initial;
+        line-height: 50%;
+    }
+    .sorting{
+        width: 100%;
+        height: 70px;
+        background: lightgrey;
+        padding: 0px;
+        line-height:  200%;
+        font-size: 0.7rem;
+        font-weight: initial;
+
+    }
+}
+
+.selectPage:hover{
+    color: #00f6f7;
+}
+.notSelectPage:hover{
+    color: #f7a500;
+}
+
+
+
+
+
+
+
+
