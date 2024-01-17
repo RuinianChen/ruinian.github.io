@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LIFE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/specific film.css" />
+    <link rel="stylesheet" href="../css/bootstrap-filmCatalog.css">
+    <link href="../css/Lifestyle.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">Leonardo DiCaprio</a>
+            </div>
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="anecdote.html">Anecdotes</a></li>
+                    <li><a href="Life.html">Career</a></li>
+                    <li><a href="MovieCatalogNewToOld1.html">Movies</a></li>
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+        <div class="PathPrompt">
+            <div>
+                <a class="pathPromptNotSelect" href="home.html">Home</a>
+                <a class="pathPromptNotSelect">></a>
+                <u class="pathPromptSelect">Career</u>
+            </div>
+        </div>
+    <div style="margin-bottom: 10px;width: 100%"></div>
+        <div class="sorting">
+            <div>
+                <div style="margin-left: 5%;display:inline;"><strong>PERSONAL EXPERIENCE</strong></div>
+            </div>
+        </div>
+
+        <div class="content1">
+
+                        <div class="left" >
+                            <p style="padding: 1.5vw;font-size: 1.7vw;">Leonardo DiCaprio, born on November 11, 1974 in Los Angeles, California, is an American film and television actor and producer.
+                                <br/> <br/>In 1990, at the age of 16, she appeared in the TV series Growing Pains. He was nominated for best Supporting Actor at the 66th Academy Awards and best Supporting Actor at the 51st Golden Globe Awards for his performance in What's Eating Gilbert Grape in 1993. In 1996, he starred in romeo and Juliet, and won the best Actor award at the 47th Berlin International Film Festival.  In 2004, he won the Golden Globe Award for Best Actor for his role in "The Aviator". In 2006, he received golden Globe Nominations for best Actor for his roles in "The Departed" and "Blood Diamond". He starred in inception in 2010. He starred in the Great Gatsby in 2013. In January 2014, he won the Golden Globe Award for Best Actor for his role in The Wolf of Wall Street.
+                                <br/> <br/>In 2016, he won the Best Actor Award at the 73rd Golden Globe Awards and the Best Actor Award at the 88th Academy Awards for his role in the film The Revenant. In December 2019, he was named one of the Guardian's top 10 Actors of 2019.
+                            </p>
+                        </div>
+
+                        <div class="right">
+                            
+                                <img src="../src/photo/Inception.png" class="picture" >
+        
+                                <img src="../src/photo/J. Edgar.png" class="picture" >
+                            
+                                <img src="../src/photo/The Wolf of Wall Street.png" class="picture" >
+                            
+                        </div>
+            
+        </div>
+    
+        <div class="sorting">
+            <div>
+                <div style="margin-left: 5%;display:inline;"><strong>SOICAL WORKS </strong></div>              
+            </div>
+        </div>
+    
+        <div class="box">
+            <ul id="example3" >
+                
+                    <li style="width: 10%;font-size: 2vw;text-align: center;" >[1997]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2002]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2006]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2007]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2009]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2010]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2013]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2014]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2015]</li>
+                    <li style="width: 10%;font-size: 2vw;text-align: center;">[2019]</li>
+
+               
+                
+            </ul>
+            <iframe src="" name="content"></iframe> 
+        </div>
+        <script>
+            var content=document.getElementsByName("content")[0];
+            var lis=document.querySelectorAll("#example3 li");
+            var len=lis.length;
+            var src=["content1.html","content2.html","content3.html","content4.html","content5.html","content6.html","content7.html","content8.html","content9.html","content10.html"]//将地址存入数组
+            content.setAttribute("src",src[0]);
+            
+            for(var i=0;i<len;i++){
+                lis[i].setAttribute("src",src[i]);
+            }
+            
+            for(var i=0;i<len;i++){
+                lis[i].onclick=function(){
+                    content.setAttribute("src",this.getAttribute("src"));
+                    for(var i=0;i<len;i++){
+                        if(lis[i]==this){
+                            lis[i].style.background="black";
+                            lis[i].style.color="white";
+                        }else{
+                            lis[i].style.background="white";
+                            lis[i].style.color="black";
+                        }
+                    }
+                }
+            }
+        </script>
+
+        
+
+</body>
+</html>
